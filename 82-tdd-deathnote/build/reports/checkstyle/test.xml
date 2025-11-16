@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="12.1.1">
 <file name="C:\Users\jacop\OneDrive\Documenti\lab_PROG_OGGETTI\8\lab08\82-tdd-deathnote\src\test\java\it\unibo\deathnote\TestDeathNote.java">
-<error line="73" column="25" severity="error" message="The String &quot;Totò Riina&quot; appears 3 times in the file." source="com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"/>
-<error line="86" column="22" severity="error" message="&apos;6400&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
 </checkstyle>

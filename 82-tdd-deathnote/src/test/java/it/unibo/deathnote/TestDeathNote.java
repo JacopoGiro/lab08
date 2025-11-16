@@ -63,6 +63,8 @@ class TestDeathNote {
 
     @Test
     void deathDetailsCheck() throws InterruptedException {
+        final long delay = 6400;
+        final String name = "Poppi";
         try {
             dNote.writeDetails("try details");
             Assertions.fail("Writing the details before writing an actual name should throw the appropriate exception");
@@ -70,8 +72,8 @@ class TestDeathNote {
             Assertions.assertNotNull(e.getMessage(), "IllegalStateException message is null");
             Assertions.assertNotEquals("", e.getMessage(), "IllegalStateException message is empty");
         }
-        dNote.writeName("Totò Riina");
-        Assertions.assertEquals(dNote.getDeathDetails("Totò Riina"), 
+        dNote.writeName(name);
+        Assertions.assertEquals(dNote.getDeathDetails(name), 
             "", 
             "death details if not specified should be empty \"\" but it isn't"
         );
@@ -79,11 +81,11 @@ class TestDeathNote {
             "writing details should have returned true but it didn't"
         );
         Assertions.assertEquals("ran for too long", 
-            dNote.getDeathDetails("Totò Riina"), 
+            dNote.getDeathDetails(name), 
             "expecting \"ran for too long\""
         );
         dNote.writeName("Joseph Stalin");
-        Thread.sleep(6400);
+        Thread.sleep(delay);
         Assertions.assertFalse(dNote.writeDetails("assassinated"), 
             "writing death details after the time limit should have returned false but it didn't"
         );

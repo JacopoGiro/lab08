@@ -26,7 +26,7 @@ final class DeathNoteImpl implements DeathNote {
     @Override
     public void writeName(final String name) {
         if (name == null) {
-            throw new NullPointerException("name parameter shouldn't be null");
+            throw new NullPointerException("name parameter shouldn't be null"); // NOPMD
         }
         if (name.isEmpty()) {
             return;
@@ -41,8 +41,9 @@ final class DeathNoteImpl implements DeathNote {
         if (cause == null || dNote.isEmpty()) {
             throw new IllegalStateException("either cause is null or dNote is empty");
         }
+        final long delay = 40;
         //if the cause is written within 40ms 
-        if ((System.currentTimeMillis() - lastWriteTime) <= 40) {
+        if ((System.currentTimeMillis() - lastWriteTime) <= delay) {
             dNote.get(lastNameWritten).setDeathCause(cause);
             return true;
         }
@@ -54,8 +55,9 @@ final class DeathNoteImpl implements DeathNote {
         if (details == null || dNote.isEmpty()) {
             throw new IllegalStateException("cause is null or dNote is empty");
         }
+        final long delay = 6400;
         //if the cause is written within 6400ms 
-        if ((System.currentTimeMillis() - lastWriteTime) <= 6400) {
+        if ((System.currentTimeMillis() - lastWriteTime) <= delay) {
             dNote.get(lastNameWritten).setDeathDetails(details);
             return true;
         }

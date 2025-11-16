@@ -1,8 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.18.0" timestamp="2025-11-16T14:28:31.957">
-<file name="C:\Users\jacop\OneDrive\Documenti\lab_PROG_OGGETTI\8\lab08\82-tdd-deathnote\src\main\java\it\unibo\deathnote\DeathNoteImpl.java">
-<violation beginline="29" endline="29" begincolumn="13" endcolumn="80" rule="AvoidThrowingNullPointerException" ruleset="Design" package="it.unibo.deathnote" class="DeathNoteImpl" method="writeName" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.18.0/pmd_rules_java_design.html#avoidthrowingnullpointerexception" priority="1">
-Avoid throwing null pointer exceptions.
-</violation>
-</file>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.18.0" timestamp="2025-11-16T16:44:19.710">
 </pmd>
