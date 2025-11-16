@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="12.1.1">
+<file name="C:\Users\jacop\OneDrive\Documenti\lab_PROG_OGGETTI\8\lab08\82-tdd-deathnote\src\main\java\it\unibo\deathnote\api\DeathNote.java">
+</file>
+<file name="C:\Users\jacop\OneDrive\Documenti\lab_PROG_OGGETTI\8\lab08\82-tdd-deathnote\src\main\java\it\unibo\deathnote\DeathNoteImpl.java">
+<error line="45" column="61" severity="error" message="&apos;40&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="58" column="61" severity="error" message="&apos;6400&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+</checkstyle>
